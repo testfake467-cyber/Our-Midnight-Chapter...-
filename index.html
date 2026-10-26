@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090807">
+<title>Our Midnight Chapter — Parth & Larissa</title>
+<style>
+:root{--bg:#090807;--panel:#14110e;--gold:#d8b56a;--gold2:#f4dfaa;--muted:#b9ad98;--wine:#4c111b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#21170f 0%,#090807 55%);color:#f5eee2;font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.15;background-image:radial-gradient(#e7c77e .7px,transparent .7px);background-size:34px 34px;z-index:0}
+#particles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}.spark{position:absolute;width:3px;height:3px;border-radius:50%;background:#f2d48c;box-shadow:0 0 12px 3px #b88c3d;animation:drift linear infinite;opacity:0}
+@keyframes drift{0%{transform:translateY(105vh) scale(.4);opacity:0}15%{opacity:.8}85%{opacity:.5}100%{transform:translateY(-10vh) scale(1.2);opacity:0}}
+main,header,footer{position:relative;z-index:2}.wrap{width:min(1080px,92vw);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid #8c6a332e;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.brand{display:flex;gap:10px;align-items:center}.brand-mark{color:var(--gold2);font-size:20px}
+nav a{color:var(--muted);text-decoration:none;margin-left:20px}nav a:hover{color:var(--gold2)}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:76px 0 64px}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:25px}
+.rose{font-size:46px;filter:drop-shadow(0 0 18px #bd8b48);animation:pulse 3s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.08);filter:drop-shadow(0 0 28px #d8ad5d)}}
+h1{font-size:clamp(44px,8vw,92px);font-weight:normal;line-height:.98;margin:22px 0;letter-spacing:-.04em}h1 em{font-weight:normal;color:var(--gold2)}.sub{max-width:530px;margin:0 auto 30px;color:#c5b9a6;font-size:17px;line-height:1.8}
+.btn{border:1px solid var(--gold);background:linear-gradient(135deg,#d9b86c,#9c722e);color:#100d08;padding:14px 23px;font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:.25s;display:inline-block}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px #d8b56a2b}.btn.outline{background:transparent;color:var(--gold2)}.btn.small{padding:10px 13px;font-size:10px}
+.section{padding:65px 0}.section-head{text-align:center;margin-bottom:32px}.kicker{color:var(--gold);font:10px Arial,sans-serif;letter-spacing:.35em;text-transform:uppercase}.section h2{font-size:clamp(30px,5vw,48px);font-weight:normal;margin:12px 0;color:#f4e7cd}.section h2 em{color:var(--gold2)}
+.gallery-top{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0 auto 24px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.photo{min-height:225px;aspect-ratio:4/5;background:linear-gradient(145deg,#211912,#0c0a08);border:1px solid #c7a65b42;position:relative;overflow:hidden;display:grid;place-items:center;text-align:center;padding:18px;transition:transform .35s,border-color .35s}.photo:hover{transform:translateY(-5px);border-color:var(--gold)}.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.photo:has(img){padding:0}.photo .caption{position:absolute;bottom:0;left:0;right:0;padding:28px 12px 13px;background:linear-gradient(transparent,#070605e8);color:#f7e9c9;font-size:14px}.placeholder-icon{font-size:30px;color:#bd974f;margin-bottom:10px}.placeholder-text{font-size:13px;line-height:1.6;color:#b5a58c}.remove{position:absolute;top:8px;right:8px;border:1px solid #e7c67b;background:#100d0be8;color:#f5d68e;border-radius:50%;width:30px;height:30px;cursor:pointer;z-index:3}
+.letter-card{max-width:740px;margin:auto;padding:clamp(25px,6vw,55px);border:1px solid #c8a35a66;background:linear-gradient(145deg,#17120e,#0d0b09);box-shadow:0 25px 70px #0008;text-align:center;position:relative}.letter-card:before,.letter-card:after{content:"✦";position:absolute;color:#d4b36c;font-size:18px}.letter-card:before{top:15px;left:18px}.letter-card:after{bottom:15px;right:18px}.letter-card p{color:#d0c3ad;font-size:17px;line-height:1.95}.letter-card .sign{color:var(--gold2);font-style:italic;font-size:24px}
+.secret{background:radial-gradient(ellipse at center,#241711,#0a0807 70%);border-top:1px solid #b58c452b;border-bottom:1px solid #b58c452b;text-align:center;padding:65px 20px}.secret h2{font-size:clamp(29px,5vw,45px);font-weight:normal}.secret p{color:#c5b9a6;line-height:1.8}.secret-message{display:none;max-width:560px;margin:25px auto 0;color:var(--gold2);font-size:22px;line-height:1.7;animation:reveal .8s ease}@keyframes reveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:35px 10px 45px;color:#8f8069;font-size:12px;letter-spacing:.1em}.notice{font:12px Arial,sans-serif;color:#d2b978;background:#211a10;border:1px solid #82622d;padding:13px 15px;line-height:1.6;margin:18px auto;max-width:760px}.hidden{display:none!important}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#d8b56a;color:#100d08;padding:12px 18px;font:12px Arial,sans-serif;z-index:10;display:none;max-width:90vw;text-align:center}
+@media(max-width:700px){nav{align-items:flex-start}.navlinks a{margin-left:10px;font-size:10px}.gallery{grid-template-columns:repeat(2,1fr);gap:10px}.photo{min-height:190px}.hero{min-height:70vh;padding:60px 0}.sub{font-size:15px}.section{padding:48px 0}}
+@media(max-width:430px){.gallery{grid-template-columns:1fr 1fr}.photo{min-height:160px}.navlinks a:first-child{display:none}}
+</style>
+</head>
+<body>
+<div id="particles"></div><div id="toast"></div>
+<header class="wrap">
+<nav><div class="brand"><span class="brand-mark">✦</span><span>Our Midnight Chapter</span></div><div class="navlinks"><a href="#memories">Memories</a><a href="#letter">Letter</a></div></nav>
+</header>
+<main>
+<section class="hero wrap">
+<div><div class="eyebrow">A world made for two</div><div class="rose">🥀</div><h1>In the dark,<br><em>you shine.</em></h1><p class="sub">Some stories are written in the stars. Ours is written in little moments, quiet promises, and memories I never want to lose.</p><button class="btn" id="enterBtn">Enter our world&nbsp; ✦</button></div>
+</section>
+<section id="memories" class="section wrap">
+<div class="section-head"><div class="kicker">Chapter I · The moments</div><h2>Our <em>memories</em></h2><p class="sub">Every picture holds a little piece of us.</p></div>
+<div class="gallery-top"><label class="btn small" for="photoInput">＋ Add photos</label><input class="hidden" type="file" id="photoInput" accept="image/*" multiple><button class="btn outline small" id="heartsBtn">Send a little magic ✦</button></div>
+<div class="notice" id="storageNotice">Preview mode: photos added here are saved only in this browser. To make photos sync between your phone and Larissa’s phone, the site must be connected to secure cloud photo storage before sharing.</div>
+<div class="gallery" id="gallery">
+<div class="photo"><div><div class="placeholder-icon">✧</div><div class="placeholder-text">Your first memory<br><small>Add a photo to begin</small></div></div></div>
+<div class="photo"><div><div class="placeholder-icon">❦</div><div class="placeholder-text">A moment to keep<br><small>Your story, your way</small></div></div></div>
+<div class="photo"><div><div class="placeholder-icon">✦</div><div class="placeholder-text">Just us<br><small>More chapters await</small></div></div></div>
+</div>
+</section>
+<section id="letter" class="section wrap">
+<div class="section-head"><div class="kicker">Chapter II · A note for you</div><h2>To my <em>Larissa</em></h2></div>
+<div class="letter-card"><div class="rose">✉</div><p>In a world that never stops moving, you are the moment I want to stay in. If I could keep one thing close through every midnight and every sunrise, it would be the feeling of having you in my life.</p><p>These little memories are only a small part of what you mean to me. The rest is in every thought of you, every smile you leave behind, and every chapter we have yet to write.</p><div class="sign">Forever your Parth 🖤</div></div>
+</section>
+<section class="secret"><div class="kicker">Chapter III · Just for you</div><h2>A little <em>secret</em></h2><p>Some surprises are better when you discover them yourself.</p><button class="btn" id="secretBtn">Reveal your surprise ✦</button><div class="secret-message" id="secretMessage">If I had a thousand lifetimes, I would still hope that one of them leads me to you. You are my favourite plot twist, my soft place to land, and my always. 🖤</div></section>
+</main>
+<footer><div style="color:#d8b56a;font-size:20px;margin-bottom:12px">✦</div>MADE WITH LOVE · PARTH & LARISSA<br><br><span style="letter-spacing:.04em">A little world of our own.</span></footer>
+<script>
+const particles=document.getElementById('particles');
+for(let i=0;i<34;i++){const s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'%';s.style.animationDuration=(7+Math.random()*12)+'s';s.style.animationDelay=(-Math.random()*18)+'s';s.style.width=s.style.height=(1+Math.random()*3)+'px';particles.appendChild(s)}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display='none',2800)}
+function burst(symbol='✦'){for(let i=0;i<22;i++){const e=document.createElement('span');e.textContent=symbol;e.style.position='fixed';e.style.left=(40+Math.random()*20)+'vw';e.style.top=(45+Math.random()*10)+'vh';e.style.zIndex=9;e.style.pointerEvents='none';e.style.color=Math.random()>.5?'#f4dfaa':'#b68a43';e.style.fontSize=(12+Math.random()*20)+'px';e.style.transition='transform 1.5s ease,opacity 1.5s ease';document.body.appendChild(e);requestAnimationFrame(()=>{e.style.transform=`translate(${(Math.random()-.5)*440}px,${(Math.random()-.5)*520}px) rotate(${Math.random()*300}deg)`;e.style.opacity='0'});setTimeout(()=>e.remove(),1600)}}
+document.getElementById('enterBtn').onclick=()=>{burst('✦');document.getElementById('memories').scrollIntoView({behavior:'smooth'});toast('Welcome to our little world, Larissa 🖤')};
+document.getElementById('heartsBtn').onclick=()=>{burst('♥');toast('A little magic, sent just for you 🖤')};
+document.getElementById('secretBtn').onclick=()=>{const m=document.getElementById('secretMessage');m.style.display=m.style.display==='block'?'none':'block';burst('❦');document.getElementById('secretBtn').textContent=m.style.display==='block'?'Hide the surprise':'Reveal your surprise ✦'};
+const gallery=document.getElementById('gallery'),input=document.getElementById('photoInput');
+function makeCard(src,name){const card=document.createElement('div');card.className='photo';const img=document.createElement('img');img.src=src;img.alt=name||'A memory of us';const cap=document.createElement('div');cap.className='caption';cap.textContent=name||'A moment with you';const rm=document.createElement('button');rm.className='remove';rm.textContent='×';rm.setAttribute('aria-label','Remove photo');rm.onclick=()=>{card.remove();saveLocal();toast('Photo removed from this browser')};card.append(img,cap,rm);gallery.prepend(card);card.onclick=(e)=>{if(e.target!==rm)burst('✦')}}
+function saveLocal(){try{const items=[...gallery.querySelectorAll('.photo img')].map(img=>({src:img.src,name:img.nextElementSibling?.textContent||'A moment with you'}));localStorage.setItem('midnightGallery',JSON.stringify(items))}catch(e){toast('Storage is full. Try fewer or smaller photos.')}} 
+try{const old=JSON.parse(localStorage.getItem('midnightGallery')||'[]');if(old.length){gallery.innerHTML='';old.forEach(x=>makeCard(x.src,x.name))}}catch(e){}
+input.addEventListener('change',async()=>{const files=[...input.files];for(const file of files){if(!file.type.startsWith('image/'))continue;const reader=new FileReader();reader.onload=()=>{makeCard(reader.result,file.name.replace(/\.[^.]+$/,'')||'A moment with you');saveLocal()};reader.readAsDataURL(file)}input.value='';toast('Added to this browser. Cloud sync is not connected yet.')});
+</script>
+</body></html>
